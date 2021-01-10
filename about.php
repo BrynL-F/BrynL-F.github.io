@@ -21,11 +21,11 @@
     <section class = "right_flex wrapper">
       <section name="about_content" class="flex_column_nowrap" style="background-color:green;">
         <section name="about_text" class="flex_row_wrap" style="background-color:white">
-          <div style="background-color:yellow;"><h1> ;dlfkja;lkdfja;dlkfja;lkdjfa;dsklfja;lkdjf;alkdfja;lkdjf </bla></div>
+          <div style="background-color:yellow;"><h1> ;dlfkja;lkdfja;dlkfja;lkdjfa; dsklfja;lkdjf;alk dfja;lkdjf </bla></div>
           <div style="background-color:pink"><h1>bla</h1></div>
         </section>
         <section name="interests_text" class="flex_row_wrap" style="background-color:white;">
-          <div style="background-color:purple;"><h1> ;dlfkja;lkdfja;dlkfja;lkdjfa;dsklfja;lkdjf;alkdfja;lkdjf </bla></div>
+          <div style="background-color:purple;"><h1> ;dlfkja;lkdfja;dlkfj ;lkdjfa;dsklfja ;lkdjf;alkdf ja;lkdjf </bla></div>
         </section>
       </section>
     </section>
