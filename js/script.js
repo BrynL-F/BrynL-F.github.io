@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
   // DOM variables
   let languageDesktopButton = $('.extra-content__language'),
   hamburguerMenu = $('.menu'),
@@ -30,3 +32,4 @@ function toggleARIA(selector, ARIA) {
     return attr == 'true' ? 'false' : 'true';
   });
 }
+
