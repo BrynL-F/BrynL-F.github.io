@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+
+  <title>Bryn Leonard-Fortune Portfolio</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" /></script>
+  <script src="script.js"/></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<header>
+    <section id="desktop-menu" class="desktop-menu">
+        <nav class="sidebar flex-column-nowrap">
+            <a class="sidebar__logo" href="#">
+                <abbr class="logo"><img src="./media/logos/blf_logo.png" width = "60" height="60"</abbr>
+            </a>
+            <ul class="sidebar__nav-list flex-column-nowrap" role="menubar" aria-label="Main desktop menu">
+
+                <li class="<?php if ($thisPage=="about") {echo "active nav-list__item button flex-column-nowrap"; } else  {echo "nav-list__item skills button flex-column-nowrap";}?> " role="menuitem"  >
+                    <a class="flex-row-wrap" href="about.php" tabindex="0">
+                        <img src="./media/icons/android-person.svg" height = "45" width = "40">
+                        <span class="u-uppercase">About</span>
+                    </a>
+                </li>
+                <li class="<?php if ($thisPage=="projects") {echo "active nav-list__item button flex-column-nowrap"; } else  {echo "nav-list__item skills button flex-column-nowrap";}?> " role="menuitem"  >
+                    <a class="flex-row-wrap" href="projects.php" tabindex="0">
+                        <img src="./media/icons/ios-albums.svg" height = "45" width = "40">
+                        <span class="u-uppercase">Projects   </span>
+                    </a>
+                </li>
+                <li class="<?php if ($thisPage=="papers") {echo "active nav-list__item button flex-column-nowrap"; } else  {echo "nav-list__item skills button flex-column-nowrap";}?> " role="menuitem"  >
+                    <a class="flex-row-wrap" href="papers.php" tabindex="0">
+                        <img src="./media/icons/document.svg" height = "45" width = "40">
+                        <span class="u-uppercase">Papers</span>
+                    </a>
+                </li>
+                <li class="<?php if ($thisPage=="contact") {echo "active nav-list__item  button flex-column-nowrap"; } else  {echo "nav-list__item skills button flex-column-nowrap";}?> " role="menuitem"  >
+                    <a class="flex-row-wrap" href="contact.php" tabindex="0">
+                        <img src="./media/icons/android-mail.svg" height = "45" width = "40">
+                        <span class="u-uppercase">Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="sidebar__extra-content" role="menu">
+                <li class="<?php if ($thisPage=="share") {echo "active extra-content__share fake_button flex-row-wrap"; } else  {echo "extra-content__share fake_button skills flex-row-wrap";}?> " role="menuitem"  >
+                    <a href="share.php" tabindex="0">
+                        <img src="./media/icons/share.svg" height = "45" width = "40">
+                        <span class="u-uppercase">Share</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section id="mobile-menu" class="mobile-menu navbar flex-row-wrap">
+        <a class="navbar__logo" href="#">
+            <span class="logo"><img src="./media/logos/blf_logo.png" width = "60" height="60"<</span>
+        </a>
+        <div class="navbar__mobile-menu">
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav class="navbar__mobile-menu__nav" aria-label="Main mobile menu" aria-hidden="true">
+            <ul class="navbar__mobile-menu__list flex-column-nowrap" role="menu">
+                <li class="<?php if ($thisPage=="about") {echo "active navbar__mobile-menu__item flex-row-wrap u-uppercase fake-button"; } else  {echo "navbar__mobile-menu__item flex-row-wrap u-uppercase fake-button";}?> " role="menuitem"  >
+                    <a href="about.php" tabindex="-1">About</a>
+                </li>
+                <li class="<?php if ($thisPage=="projects") {echo "active navbar__mobile-menu__item flex-row-wrap u-uppercase fake-button"; } else  {echo "navbar__mobile-menu__item flex-row-wrap u-uppercase fake-button";}?> " role="menuitem"  >
+                    <a href="projects.php" tabindex="-1">Projects</a>
+                </li>
+                <li class="<?php if ($thisPage=="papers") {echo "active navbar__mobile-menu__item flex-row-wrap u-uppercase fake-button"; } else  {echo "navbar__mobile-menu__item flex-row-wrap u-uppercase fake-button";}?> " role="menuitem"  >
+                    <a href="papers.php" tabindex="-1">Papers</a>
+                </li>
+                <li class="<?php if ($thisPage=="contact") {echo "active navbar__mobile-menu__item flex-row-wrap u-uppercase fake-button"; } else  {echo "navbar__mobile-menu__item flex-row-wrap u-uppercase fake-button";}?> " role="menuitem"  >
+                    <a href="contact.php" tabindex="-1">Contact</a>
+                </li>
+
+                <li class="<?php if ($thisPage=="share") {echo "active navbar__mobile-menu__item flex-row-wrap u-uppercase fake-button"; } else  {echo "navbar__mobile-menu__item flex-row-wrap u-uppercase fake-button";}?> " role="menuitem"  >
+                    <a href="share.php" tabindex="-1">Share</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+</header>  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script><script  src="./js/script.js"></script>
+
+  <main >
+    <section class= "left_flex"></section>
+    <section class = "right_flex wrapper">
+      <section name="about_content" class="flex_column_nowrap" style="background-color:green;">
+        <section name="about_text" class="flex_row_wrap" style="background-color:white">
+          <div style="background-color:yellow;"><h1> ;dlfkja;lkdfja;dlkfja;lkdjfa; dsklfja;lkdjf;alk dfja;lkdjf </bla></div>
+          <div style="background-color:pink"><h1>bla</h1></div>
+        </section>
+        <section name="interests_text" class="flex_row_wrap" style="background-color:white;">
+          <div style="background-color:purple;"><h1> ;dlfkja;lkdfja;dlkfj ;lkdjfa;dsklfja ;lkdjf;alkdf ja;lkdjf </bla></div>
+        </section>
+      </section>
+    </section>
+
+
+  </main>
+
+
+</body>
+</html>
