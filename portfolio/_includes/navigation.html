@@ -1,7 +1,22 @@
-<nav>
-    {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-      {{ item.name }}
-    </a>
-  {% endfor %}  
+<nav class = "menu">
+    <div class="menu_logo">
+         <a class="menu_logo" href="#">
+            <img src="/assets/images/logos/blf_logo.png" width = "70" height="70">
+         </a>
+    </div>
+
+    <div class="menu_options">
+        {% for item in site.data.navigation %}
+            <a {% if page.url == item.link %} class="current menu_option"{% else %} class="menu_option" {% endif %}  href="{{ item.link }}" tabindex="0">
+                <img class="menu_icon" src="{{ item.icon }}">
+                <span class="menu_option_title">{{ item.name }}</span>
+            </a>
+        {% endfor %} 
+    </div>
+    <div class = "menu_share">
+        <a href="share.html">
+            <abbr class="logo"><img src="/assets/images/icons/share.svg" width = "60" height="60"</abbr>
+        </a>
+    </div>
 </nav>
+

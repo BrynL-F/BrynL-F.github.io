@@ -4,9 +4,17 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
   </head>
   <body>
-    {% include navigation.html %}
-    {{ content }}
+
+    <section class="menu_and_content">
+      {% include navigation.html %}
+      <div class = "content" style=""> 
+        {{content}}
+      </div>
+    </section>
+
+
   </body>
 </html>
