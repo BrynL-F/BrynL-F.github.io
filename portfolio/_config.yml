@@ -1,4 +1,2 @@
-sass:
-    sass_dir: _sass
-sass:
-    style: compressed
+baseurl: /portfolio
+url: http://BrynL-F.github.io
