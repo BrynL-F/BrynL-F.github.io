@@ -3,18 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+    <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
-
-    <section class="menu_and_content">
-      {% include navigation.html %}
-      <div class = "content"> 
-        {{content}}
-      </div>
-    </section>
-
-
+    {% include navigation.html %}
+    {{ content }}
   </body>
 </html>
