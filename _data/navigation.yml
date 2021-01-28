@@ -1,0 +1,13 @@
+
+- name: About
+  link: /about.html
+  icon: /assets/images/icons/android-person.svg
+- name: Blog
+  link: /blog.html
+  icon: /assets/images/icons/ios-browsers.svg
+- name: Projects
+  link: /projects.html
+  icon: /assets/images/icons/ios-albums.svg
+- name: Contact
+  link: /
+  icon: /assets/images/icons/android-mail.svg
