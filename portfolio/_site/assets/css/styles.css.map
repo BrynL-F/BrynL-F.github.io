@@ -2,13 +2,11 @@
 	"version": 3,
 	"file": "styles.css",
 	"sources": [
-		"styles.scss",
-		"_sass/main.scss"
+		"styles.scss"
 	],
 	"sourcesContent": [
-		"@import \"main\";",
-		".current {\n    color: green;\n  }\n\n* {\n  background-color: blue;\n}"
+		".current {\n    color: green;\n  }\n\n* {background-color: peachpuff;}"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,KAAK,GACb;;AAEH,AAAA,CAAC,CAAC,EACA,gBAAgB,EAAE,IAAI,GACvB"
+	"mappings": "AAAA,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,KAAK,GACb;;AAEH,AAAA,CAAC,CAAC,EAAC,gBAAgB,EAAE,SAAS,GAAG"
 }
