@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: "Barlow";
-  color: white;
+  color: grey;
 }
 
 h1 {
@@ -52,10 +52,22 @@ h1 {
   height: 100%;
 }
 
+html{
+   background: url("../images/stars.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:#0b1c23;
+
+}
+
 
 body { 
   width: 100%;
   height: 100%;
+
+
  }
 
 .menu_and_content{
@@ -67,11 +79,11 @@ body {
 }
 
 .menu{
-  background-color:#050f05;
+  background-color: rgba(250,240,250,0.1);
 }
 
 .content{
-  background-color: #0e1b1e;
+  //background-color: #0e1b1e;
   width:100%;
   height:100%;
 }
