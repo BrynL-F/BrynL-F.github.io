@@ -53,12 +53,7 @@ h1 {
 }
 
 html{
-   background: url("../images/space.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color:#0b1c23;
+  background-color:#fefdfd;
 
 }
 
@@ -79,12 +74,11 @@ body {
 }
 
 .menu{
-  background-color: rgba(250, 240, 250, 0.03);
-  backdrop-filter: blur(1px);
+  background-color: f8f5f5;
 }
 
 .content{
-  //background-color: #0e1b1e;
+  background-color: #f8f5f5;
   width:100%;
   height:100%;
 
