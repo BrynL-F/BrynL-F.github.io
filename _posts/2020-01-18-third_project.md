@@ -2,8 +2,8 @@
 layout: post
 author: Bryn
 type: project
-title: Project Numero Uno
-title-sentence: First Project is the best
+title: 3's the Bee's Knees
+title-sentence: Thirdies 
 ---
 This is the first paragraph of the project.
 

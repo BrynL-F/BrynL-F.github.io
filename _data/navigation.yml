@@ -4,10 +4,10 @@
   icon: /assets/images/icons/Grey/1.svg
 - name: Blog
   link: /blog.html
-  icon: /assets/images/icons/Grey/6.svg
+  icon: /assets/images/icons/Grey/3.svg
 - name: Projects
   link: /projects.html
-  icon: /assets/images/icons/Grey/3.svg
+  icon: /assets/images/icons/Grey/6.svg
 - name: Contact
   link: /
   icon: /assets/images/icons/Grey/4.svg

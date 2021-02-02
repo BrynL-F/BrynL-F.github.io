@@ -1,9 +1,10 @@
 ---
 layout: post
 author: Bryn
-type: project
-title: Project Numero Uno
+type: paper
+title: Paper Numero Uno
+title-sentence: First Paper is the best
 ---
-This is a first project. This is the first paragraph of the project.
+This is a first paper. This is the first paragraph of the paper.
 
-This is the second paragraph of the project.
+This is the second paragraph of the paper.

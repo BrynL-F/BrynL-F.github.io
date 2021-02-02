@@ -2,15 +2,54 @@
 layout: default
 title: Blog
 ---
-<h1>Latest Posts</h1>
 
-<ul>
-  {% for post in site.posts %}
+
+<div>
+
+  {% assign design_papers = site.posts | where: "topic", "Design" %}
+  {% assign software_papers = site.posts | where: "topic", "Software" %}
+  {% assign business_papers = site.posts | where: "topic", "Business" %}
+
+  <h1>Latest Posts</h1>
+
+  <h2>Design</h2> 
+  <div class="flex_row_nowrap scrollable">
+  {% for post in design_papers %}
     {% if post.type == "paper" %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }} - {{ post.type }}</a></h2>
-      {{ post.excerpt }}
-    </li>
+    <a class="paper_preview" href="{{ post.url }}">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.title-sentence }}</p>
+    </a>
     {% endif %}
   {% endfor %}
-</ul>
+  </div>
+  
+  
+  <h2>Software</h2> 
+  <div class="flex_row_nowrap scrollable">
+  {% for post in software_papers %}
+    {% if post.type == "paper" %}
+    <a class="paper_preview" href="{{ post.url }}">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.title-sentence }} {{post.topic}}</p>
+          
+    </a>
+    {% endif %}
+  {% endfor %}
+    </div>
+
+
+   <h2>Business</h2> 
+   <div class="flex_row_nowrap scrollable">
+  {% for post in business_papers %}
+    {% if post.type == "paper" %}
+    <a class="paper_preview" href="{{ post.url }}">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.title-sentence }}</p>
+    </a>
+    {% endif %}
+  {% endfor %}
+    </div>
+    
+</div>
+
