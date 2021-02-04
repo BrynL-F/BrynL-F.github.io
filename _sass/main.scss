@@ -131,7 +131,7 @@ body {
 
 
 //screens bigger than a tablet
-@media only screen  and (min-device-width : 768px) {
+@media screen  and (min-device-width : 768px) {
   .menu{
     flex: 1;
     height:100%;
@@ -152,7 +152,7 @@ body {
 }
 
 //tablets and smaller
-@media only screen  and (max-device-width : 768px) {
+@media screen  and (max-device-width : 768px) {
   .menu_and_content{
     position: absolute;
     display: flex;
