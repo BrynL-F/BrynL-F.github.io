@@ -2,9 +2,18 @@
 layout: default
 title: Share
 ---
-{% if page.show_sidebar %}
-    <div class="sidebar">
-    sidebar content
-    </div>
-{% endif %}
-<h1>{{ "Share" | downcase }}</h1>
+<div>
+
+<h1>{{page.title}}</h1>
+
+<div class="share-page">
+    Share this on 
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbrynl-f.github.io%2F&title=Portfolio+of+Bryn+Leonard-Fortune&summary=Projects%2C+Papers%2C+and+Professional+experience.&source=brynl-f.github.io" rel="nofollow" target="_blank" title="Share on LinkedInr">LinkedInr</a>
+    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+    <a href='https://api.whatsapp.com/send?text={{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url | uri_escape}}'>bla</a> 
+</div>
+
+</div>
+
+

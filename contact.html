@@ -1,9 +1,54 @@
+---
 layout: default
 title: Contact
 ---
-{% if page.show_sidebar %}
-    <div class="sidebar">
-    sidebar content
+<div>
+    <h1>Contact Me</h1>
+    
+    <div class="flex_row_wrap">
+
+    <div class="flex_column_wrap contact_links">
+
+        <div>
+            Find me on LinkedIn
+        </div>
+        <div>
+            Find me on GitHub
+        </div>
+
+
+
+
     </div>
-{% endif %}
-<h1>{{ "Contact page" | downcase }}</h1>
+
+
+    <div>
+   
+        <form
+          action="https://formspree.io/f/mqkgjlev" method="POST">
+          <label>
+            Your email:
+            <br>
+            <input type="text" name="_replyto">
+          </label>
+          <br>
+          <label>
+            Your name or your organization's name:
+            <br>
+            <input type="text" name="name">
+          </label>
+          <br>
+          <label>
+            Your message:
+            <br>
+            <textarea name="message"></textarea>
+          </label>
+          <br>
+          <button type="submit">Send</button>
+        </form>
+
+    </div>
+
+
+    </div>
+</div>
