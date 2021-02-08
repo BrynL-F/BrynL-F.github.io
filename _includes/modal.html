@@ -2,19 +2,26 @@
   <div>
     <a href="#" title="Close" class="modal-close">Close</a>
     <h1>Share</h1>
-    <div>Share this portfolio</div>
-    <div class="flex_row_wrap">
-    
-        <div>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbrynl-f.github.io%2F&title=Portfolio&summary=Projects%2C+Papers%2C+and+Professional+experience.&source=brynl-f.github.io" rel="nofollow" target="_blank" title="Share on LinkedIn">LinkedIn</a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}">Facebook</a>
-        </div>
-        <div>
 
-        </div>
-        <div>
+    <div>
 
-        </div>
+      <p>Share this portfolio</p>
+
+      <div class="flex_row_wrap">
+          <a style="padding-right:8px;" href="mailto:?subject={{ page.title }}&amp;body=Check out this portfolio {{ site.url }}{{ site.baseurl }}{{ page.url }}">Email  </a>
+          <a style="padding-right:8px;" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbrynl-f.github.io%2F&title=Portfolio&summary=Projects%2C+Papers%2C+and+Professional+experience.&source=brynl-f.github.io" rel="nofollow" target="_blank" title="Share on LinkedIn">LinkedIn  </a>
+          <a style="padding-right:8px;" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}">Facebook</a>
+      
+      </div>
+      <br>
+      
+      <p>Share this url</p>
+      <div class="flex_row_wrap"> 
+        
+        <input id="copy-site-url" value ="https://{{ site.url }}{{ site.baseurl }}{{ page.url }}" readonly="readonly">
+        <button onclick="copy()">Copy URL</button>
+      </div>
+
     <div>
   </div>
 </div>
