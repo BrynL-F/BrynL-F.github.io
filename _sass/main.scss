@@ -77,6 +77,9 @@ h6{
   flex-grow: 1;
 }
 
+.flex_column_wrap > button{
+  flex-grow: 1;
+}
 
 .flex_row_nowrap {
   position: absolute;
@@ -121,7 +124,7 @@ body {
 .content> div{
   background-color:white;
   margin:30px;
-  min-height:calc(100% - 60px - 40px);
+  min-height:calc(100% - 60px - 40px - 20px);
   padding-top:30px;
   padding-left:30px;
   padding-right:30px;
@@ -348,7 +351,7 @@ button{
     pointer-events: auto;
   }
   &>div {
-    width: 400px;
+    width: 300px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -382,3 +385,67 @@ button{
     color: black;
   }
 }
+
+.contact-box-find{
+  margin-right: 20px;
+  padding:20px;
+  margin-bottom:20px;
+  background-color: #536E7A;
+}
+.contact-box-form{
+  background-color:  #5249a5;
+  padding:20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-box-form > form> label{
+  color:  #E1DEDE;
+}
+
+
+.contact-box-links{
+  background-color: #548164;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  color:  #E1DEDE;
+}
+
+.contact_box_links > div{
+  width:100%;
+}
+
+.contact-box-links > div > a > img:hover {
+  filter: brightness(150%);
+}
+
+.contact-box-find > div > p {
+    color:  #E1DEDE;
+}
+
+.contact-box-links > div > a > p {
+    color:  #E1DEDE;
+}
+
+
+
+.sb{
+  margin-top:16px;
+  align-items: center;
+  align-content: space-between;
+}
+
+.center > * {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+form{
+  padding-top:16px;
+}
+
+

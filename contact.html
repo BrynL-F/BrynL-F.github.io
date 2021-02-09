@@ -5,50 +5,63 @@ title: Contact
 <div>
     <h1>Contact Me</h1>
     
-    <div class="flex_row_wrap">
+    <div class="flex_row_wrap contact_box">
 
-    <div class="flex_column_wrap contact_links">
+        <div class="contact-box-form">
+
+            <h3>Send me a message</h3>
+            <form action="https://formspree.io/f/mqkgjlev" method="POST">
+              <label>
+                Your email:
+                <br>
+                <input type="text" name="_replyto">
+              </label>
+              <br>
+              <label>
+                Your name or your organization's name:
+                <br>
+                <input type="text" name="name">
+              </label>
+              <br>
+              <label>
+                Your message:
+                <br>
+                <textarea name="message"></textarea>
+              </label>
+              <br>
+              <button type="submit">Send</button>
+            </form>
+
+        </div>
+
+
 
         <div>
-            Find me on LinkedIn
+
+            <div class="contact-box-links" >
+            <h3>Connect with me</h3>
+            <div class="flex_column_wrap sb" width="100%;">
+
+
+                 <a href="https://www.linkedin.com/in/bryn-leonard-fortune/">
+                    <img src="/assets/images/icons/Grey/LinkedIn.png" width="80px">
+                </a>
+
+                <a href="https://github.com/BrynL-F">
+                    <img src="/assets/images/icons/Grey/GitHub.png" width="80px">
+                </a>
+            </div>
+
         </div>
-        <div>
-            Find me on GitHub
-        </div>
 
+        <div class="contact-box-find">
+            <h3>Find me</h3>
+            <div class="center">
+                <img src="/assets/images/icons/Grey/canada.png" width="100px">
+                <p><img src="/assets/images/icons/Grey/map.png" width="14px;">Canada</p>
+            </div>
+         <div>
 
-
-
-    </div>
-
-
-    <div>
-   
-        <form
-          action="https://formspree.io/f/mqkgjlev" method="POST">
-          <label>
-            Your email:
-            <br>
-            <input type="text" name="_replyto">
-          </label>
-          <br>
-          <label>
-            Your name or your organization's name:
-            <br>
-            <input type="text" name="name">
-          </label>
-          <br>
-          <label>
-            Your message:
-            <br>
-            <textarea name="message"></textarea>
-          </label>
-          <br>
-          <button type="submit">Send</button>
-        </form>
-
-    </div>
-
-
+        
     </div>
 </div>

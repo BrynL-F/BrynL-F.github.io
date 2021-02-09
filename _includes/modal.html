@@ -3,9 +3,7 @@
     <a href="#" title="Close" class="modal-close">Close</a>
     <h1>Share</h1>
 
-    <div>
-
-      <p>Share this portfolio</p>
+      <p><b>Share this portfolio</b></p>
 
       <div class="flex_row_wrap">
           <a style="padding-right:8px;" href="mailto:?subject={{ page.title }}&amp;body=Check out this portfolio {{ site.url }}{{ site.baseurl }}{{ page.url }}">Email  </a>
@@ -15,13 +13,12 @@
       </div>
       <br>
       
-      <p>Share this url</p>
-      <div class="flex_row_wrap"> 
+      <p><b>Share this url</b></p>
+      <div class="flex_row_wrap" > 
         
-        <input id="copy-site-url" value ="https://{{ site.url }}{{ site.baseurl }}{{ page.url }}" readonly="readonly">
+        <input id="copy-site-url" value ="https://{{ site.url }}{{ site.baseurl }}{{ page.url }}" readonly="readonly" >
         <button onclick="copy()">Copy URL</button>
       </div>
 
-    <div>
   </div>
 </div>
