@@ -2,8 +2,8 @@
 - name: About Me
   link: /about.html
   icon: /assets/images/icons/Grey/1.svg
-- name: Blog
-  link: /blog.html
+- name: Papers
+  link: /Papers.html
   icon: /assets/images/icons/Grey/3.svg
 - name: Projects
   link: /projects.html
