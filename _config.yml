@@ -24,7 +24,7 @@ author: Bryn Leonard-Fortune
 email: your-email@example.com
 description: Projects, papers, professional experience and personalization.
 image: /assets/images/logos/blf_logo.png
-baseurl: "" # the subpath of your site, e.g. /Papers
+baseurl: "" # the subpath of your site, e.g. /Blog
 url: "brynl-f.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  BrynL-F
 linkedin_username: bryn-leonard-fortune
