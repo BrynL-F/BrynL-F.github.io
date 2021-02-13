@@ -15,6 +15,7 @@
 }
 
 h1 {
+  color: #5c5c5c;
   font-size: 32px;
   padding-bottom:16px;
 }
@@ -246,14 +247,22 @@ body {
   padding: 8px;
   min-height:275px;
   min-width:200px;
+  width:200px;
   background-color: #5249a5;
   text-decoration: none;
-  color: #f8f5f5;
+  overflow:wrap;
+  white-space:normal;
 }
 
 .paper_preview > p,h3{
   color: #f8f5f5;
 }
+
+.paper_preview > p {
+  margin-top: 8px;
+}
+
+
 
 .scrollable{
   overflow-x: scroll;
@@ -266,25 +275,28 @@ body {
 }
 
 .project_preview_parent{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+  background-color: #fff;
+}
 
+.project_preview_parent > a {
+  text-decoration: none;
+  color: #fefdfd;
 }
 
 .project_preview{
   background-color: var(--plump_purple);
-  min-width:250px;
-  min-height:250px;
-  flex: 0 0 29.33333%;
-  margin-right:1%;
-  margin-bottom:1%;
-  padding:1%;
+  padding: 20px;
+  min-height:200px;
   color: #fefdfd;
 }
 
-.project_preview > h3 {
-  color: #fefdfd;
+a > .project_preview > * {
+  color: white;
 }
+
 
 
 .list_descriptions{
@@ -558,4 +570,23 @@ form{
 
 #contact{
    background-image: url("../../assets/images/contact.png");
+}
+
+.post-img-responsive > img{
+  max-width:60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.post-img-responsive > p{
+  text-align: center;
+}
+
+.post-vid-responsive{
+  max-width:60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

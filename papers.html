@@ -6,21 +6,31 @@ title: Papers
 
 <div>
 
-  {% assign design_papers = site.posts | where: "topic", "Design" %}
-  {% assign software_papers = site.posts | where: "topic", "Software" %}
-  {% assign business_papers = site.posts | where: "topic", "Business" %}
+  {% assign papers = site.posts | where: "type", "paper" %}
+  {% assign sorted_papers = papers | sort: "date" %}
+  {% assign design_papers = sorted_papers | where: "topic", "Design" %}
+  {% assign software_papers = sorted_papers | where: "topic", "Software" %}
+  {% assign business_papers = sorted_papers | where: "topic", "Business" %}
 
-  <h1>Latest Posts</h1>
+  <h1>Papers</h1>
 
-  <h2>Design</h2> 
-  <div class="flex_row_nowrap scrollable">
-  {% for post in design_papers %}
-    {% if post.type == "paper" %}
+   <h2>Business</h2> 
+   <div class="flex_row_nowrap scrollable">
+  {% for post in business_papers %}
     <a class="paper_preview" href="{{ post.url }}">
       <h3>{{ post.title }}</h3>
       <p>{{ post.title-sentence }}</p>
     </a>
-    {% endif %}
+  {% endfor %}
+    </div>
+    
+  <h2>Design</h2> 
+  <div class="flex_row_nowrap scrollable">
+  {% for post in design_papers %}
+    <a class="paper_preview" href="{{ post.url }}">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.title-sentence }}</p>
+    </a>
   {% endfor %}
   </div>
   
@@ -28,28 +38,16 @@ title: Papers
   <h2>Software</h2> 
   <div class="flex_row_nowrap scrollable">
   {% for post in software_papers %}
-    {% if post.type == "paper" %}
     <a class="paper_preview" href="{{ post.url }}">
       <h3>{{ post.title }}</h3>
       <p>{{ post.title-sentence }} {{post.topic}}</p>
           
     </a>
-    {% endif %}
   {% endfor %}
     </div>
 
 
-   <h2>Business</h2> 
-   <div class="flex_row_nowrap scrollable">
-  {% for post in business_papers %}
-    {% if post.type == "paper" %}
-    <a class="paper_preview" href="{{ post.url }}">
-      <h3>{{ post.title }}</h3>
-      <p>{{ post.title-sentence }}</p>
-    </a>
-    {% endif %}
-  {% endfor %}
-    </div>
+
     
 </div>
 

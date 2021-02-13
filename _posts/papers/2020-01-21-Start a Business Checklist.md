@@ -1,10 +1,9 @@
 ---
 layout: post
-author: Bryn
 type: paper
 topic: Design
-title: Second Paper
-title-sentence: Another title sentence
+title: Start a Business - The Checklist
+title-sentence: A checklist to guide you on your way to starting your own business
 ---
 Second paper. This is the first paragraph of the paper.
 

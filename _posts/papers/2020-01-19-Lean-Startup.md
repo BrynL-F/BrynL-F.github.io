@@ -1,10 +1,9 @@
 ---
 layout: post
-author: Bryn
 type: paper
 topic: Business
-title: Second Paper
-title-sentence: Another title sentence
+title: Sharing Strategies from "The Lean Startup"
+title-sentence: Distilling the practical approaches of Eric Ries's New York Times Bestseller
 ---
 Second paper. This is the first paragraph of the paper.
 
