@@ -1,12 +1,12 @@
 - name: About Me
   link: /about.html
-  icon: /assets/images/icons/Grey/About.svg
-- name: Papers
-  link: /papers.html
-  icon: /assets/images/icons/Grey/Papers.svg
+  icon: /assets/images/icons/about.png
+- name: Blog
+  link: /blog.html
+  icon: /assets/images/icons/blog.png
 - name: Projects
   link: /projects.html
-  icon: /assets/images/icons/Grey/Projects.svg
+  icon: /assets/images/icons/projects.png
 - name: Contact
   link: /contact.html
-  icon: /assets/images/icons/Grey/Contact.svg
+  icon: /assets/images/icons/contact.png

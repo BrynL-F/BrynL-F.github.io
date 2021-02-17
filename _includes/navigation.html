@@ -1,21 +1,21 @@
 <nav class = "menu">
     <div class="menu_logo">
          <a class="menu_logo" href="/">
-            <img src="/assets/images/logos/blf_logo.png" width = "70" height="70">
+            <img src="/assets/images/logos/blf_logo.png" width = "70" height="70" style="margin-top:8px;">
          </a>
     </div>
 
     <div class="menu_options">
         {% for item in site.data.navigation %}
             <a {% if page.url == item.link %} class="current menu_option"{% else %} class="menu_option" {% endif %}  href="{{ item.link }}" tabindex="0">
-                <img class="menu_icon" src="{{ item.icon }}">
+                <div class="test"><img class="menu_icon" src="{{ item.icon }}"></div>
                 <span class="menu_option_title">{{ item.name }}</span>
             </a>
         {% endfor %} 
     </div>
     <div class = "menu_share">
       
-      <a href="#open-modal" class="menu_icon"><img src="/assets/images/icons/Grey/Share.svg" width = "60" height="60">
+      <a href="#open-modal" class="menu_icon"><img src="/assets/images/icons/share3.png" width = "60" height="60">
         {% include modal.html %}
       </a>
     </div>

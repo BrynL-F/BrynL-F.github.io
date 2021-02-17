@@ -1,22 +1,22 @@
 ---
 layout: default
-title: Papers
+title: Blog
 ---
 
 
 <div>
 
-  {% assign papers = site.posts | where: "type", "paper" %}
-  {% assign sorted_papers = papers | sort: "date" %}
-  {% assign design_papers = sorted_papers | where: "topic", "Design" %}
-  {% assign software_papers = sorted_papers | where: "topic", "Software" %}
-  {% assign business_papers = sorted_papers | where: "topic", "Business" %}
+  {% assign blog_posts = site.posts | where: "type", "paper" %}
+  {% assign sorted_blog_posts = blog_posts | sort: "date" %}
+  {% assign design_blog_posts = sorted_blog_posts | where: "topic", "Design" %}
+  {% assign software_blog_posts = sorted_blog_posts | where: "topic", "Software" %}
+  {% assign business_blog_posts = sorted_blog_posts | where: "topic", "Business" %}
 
-  <h1>Papers</h1>
+  <h1>Blog</h1>
 
    <h2>Business</h2> 
    <div class="flex_row_nowrap scrollable">
-  {% for post in business_papers %}
+  {% for post in business_blog_posts %}
     <a class="paper_preview" href="{{ post.url }}">
       <h3>{{ post.title }}</h3>
       <p>{{ post.title-sentence }}</p>
@@ -26,7 +26,7 @@ title: Papers
     
   <h2>Design</h2> 
   <div class="flex_row_nowrap scrollable">
-  {% for post in design_papers %}
+  {% for post in design_blog_posts %}
     <a class="paper_preview" href="{{ post.url }}">
       <h3>{{ post.title }}</h3>
       <p>{{ post.title-sentence }}</p>
@@ -37,7 +37,7 @@ title: Papers
   
   <h2>Software</h2> 
   <div class="flex_row_nowrap scrollable">
-  {% for post in software_papers %}
+  {% for post in software_blog_posts %}
     <a class="paper_preview" href="{{ post.url }}">
       <h3>{{ post.title }}</h3>
       <p>{{ post.title-sentence }} {{post.topic}}</p>
